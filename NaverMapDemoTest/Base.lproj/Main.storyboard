@@ -16,14 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DCZ-eq-PYb" customClass="NMFNaverMapView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCZ-eq-PYb" customClass="NMFNaverMapView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DCZ-eq-PYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4NS-LL-rwP"/>
+                            <constraint firstItem="DCZ-eq-PYb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MCa-gs-Apd"/>
+                            <constraint firstItem="DCZ-eq-PYb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bNp-tJ-uWT"/>
+                            <constraint firstAttribute="bottom" secondItem="DCZ-eq-PYb" secondAttribute="bottom" id="oyY-AQ-nwg"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="naverMapView" destination="DCZ-eq-PYb" id="wnN-nn-Y0J"/>
